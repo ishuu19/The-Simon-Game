@@ -1,0 +1,161 @@
+body{
+    background-color: rgb(8, 44, 90)
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.refreshbtn{
+    display: block;
+    height: 40px;
+    width:auto;
+    padding: 10px;
+}
+
+.refreshbtn.inv{
+    display: none !important;
+    color: transparent !important;
+}
+
+.refresh-button.inv{
+    display: none !important;
+}
+.refresh-button:active {
+    background: #2980b9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.boxes{
+    display: none;
+    color: transparent;
+}
+
+.boxes.visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 460px; 
+    gap: 30px; 
+}
+
+.boxes div {
+    transition: all 0.3s ease; /* Smooth transition for effects */
+  }
+  
+  /* Click effect: Scale + Color Change */
+  .boxes div:active {
+    transform: scale(0.95);
+    background: transparent !important;
+  }
+  
+  /* Optional: Add a "pressed" class for JavaScript-triggered effects */
+  .boxes div.pressed {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background: #16a085;
+  }
+
+
+  
+
+.g, .r, .b, .y{
+    height:200px;
+    width: 200px; 
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.g{
+    background-color: green;
+}
+.r{
+    background-color: rgb(149, 16, 16);
+}
+.b{
+    background-color: rgb(35, 142, 196);
+}
+.y{
+    background-color: rgb(225, 229, 19);
+}
+
+
+/* Add this to your styles */
+.blink-once {
+    animation: blink 0.3s ease 1; /* Blink once for 0.5 seconds */
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; } /* Adjust opacity for blink intensity */
+  }
+
+
+.restartbtn{
+    display: none;
+    color: transparent;
+}
+
+.restart{
+    display: none;
+}
+
+.restartbtn.inv{
+    display: block !important;
+    height: 20px !important;
+    width:auto !important;
+    padding: 5px !important;
+}
+
+.restart.inv{
+    display: block !important;
+    position: absolute !important;
+    bottom: 4.5% !important;
+    right: 2% !important;
+}
+.restart:active {
+    background: #2980b9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 3rem;
+    }
+ 
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+}
+
