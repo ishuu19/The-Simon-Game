@@ -21,8 +21,8 @@ refreshBtn.addEventListener("click", function() {
     boxes.classList.add("visible");
     refreshBtn.classList.add("inv");
     refreshButton.classList.add("inv");
-    restartBtn.classList.add("inv");
-    restartButton.classList.add("inv");
+    restartBtn.classList.add("visible");
+    restartButton.classList.add("visible");
     level.textContent = "Level 1";
     if (scoreDisplay) scoreDisplay.classList.remove('hidden');
     setTimeout(() => {

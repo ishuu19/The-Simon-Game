@@ -111,14 +111,14 @@ h1{
     display: none;
 }
 
-.restartbtn.inv{
+.restartbtn.visible{
     display: block !important;
     height: 20px !important;
     width:auto !important;
     padding: 5px !important;
 }
 
-.restart.inv{
+.restart.visible{
     display: block !important;
     position: absolute !important;
     bottom: 4.5% !important;
